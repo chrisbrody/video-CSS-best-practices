@@ -1,0 +1,92 @@
+#CSS_BEST 1.1 - Intro to CSS best practices
+#CSS_BEST 1.2 - Review of best practices
+#CSS_BEST 1.3 - Outro to CSS best practices
+
+
+#CSS_BEST 1.1 - Intro to CSS best practices
+Hey Chris from Codify Academy here, in this video I want to review a few best practices in CSS.
+
+Best practices when coding emphasizes that you keep code lean and well organized.
+
+#CSS_BEST 1.2 - Review of best practices
+---------------------------------------------------------------------------------------------------------------------------------
+  1) Organize Code with Comments
+
+  CSS files can become pretty long, I've seen tens of thousands of lines.
+
+  In large files, finding and editing our styles becomes extremely difficult.
+
+  We should organize our styles into logical groups. Then, before each group, provide a comment noting what the following styles pertain to.
+
+  One of my favorite techniques is to use comments to build a table of contents at the top of a CSS file. This help you and others locate styles easier, you can also do this in HTML for similar results.
+---------------------------------------------------------------------------------------------------------------------------------
+  2) Write CSS Using Multiple Lines & Spaces
+
+  Each selector and property/value pairs should be on their own line.
+
+  in our bad code everything is on one line.
+
+  but it should look more like our good code, within each selector we’ll want to indent our declarations and have a new line for each.
+
+  Doing this makes it easy to read and edit.
+---------------------------------------------------------------------------------------------------------------------------------
+  3) Use Proper Class Names
+
+  As mentioned in the last video make sure class names relate to content in an element.
+
+  We want to try and write our selectors similar to how CSS properties are written, they should be all lowercase and if you have multiple words use a hyphen in between delimiters.
+
+  Don't create classes like the one in our bad code, they might look good but will cause confusion.
+---------------------------------------------------------------------------------------------------------------------------------
+  4) Build Proficient Selectors
+
+  The longer a selector is, the more likely that selector is going to break the CSS cascade and cause undesirable issues.
+
+  Instead try to use shorter and more direct selectors. Nest them only two to three levels deep.
+
+  We used a max of 1 pre qualifier and the key for these selectors, this is what you should aim for.
+---------------------------------------------------------------------------------------------------------------------------------
+  5) Use Specific Classes When Necessary
+
+  While applying a class to the targeted element may create more code within HTML, it will render the code faster.
+
+  In our example, the selector is way to long and we should just apply a class name to style the desired element.
+---------------------------------------------------------------------------------------------------------------------------------
+  6) Use Shorthand Properties & Values
+
+  One awesome feature of CSS is most properties have shorthand alternatives.
+
+  In our bad code we use four different declarations to apply margins all around,
+  but instead we should use the shorthand property with a different value count to apply these margins
+
+  and When you’re setting just one value,
+  shorthand is not the way to go.
+  In our bad code we wanted to apply padding on the bottom and use shorthand,
+  but instead should of just used padding-left so it doesn't overwrite any other padding.
+---------------------------------------------------------------------------------------------------------------------------------
+  7) Use Shorthand Hexadecimal Color Values
+
+  When you can, use the three-character shorthand hexadecimal color value, and always use lowercase characters in a hexadecimal color value.
+
+  This idea, is to help remain consistent, prevent confusion, and embrace the syntax of CSS.
+---------------------------------------------------------------------------------------------------------------------------------
+  8) Drop Units from Zero Values
+
+  One way to easily cut the amount of CSS needed is to remove the unit from any zero value.
+  I doesn't matter which length unit you're working with, just use zero.
+
+  Adding the unit is unnecessary and provides no additional value. so in our example we can see there is no need for units when a value is 0.
+---------------------------------------------------------------------------------------------------------------------------------
+  9) Modularize Styles for Reuse
+
+  CSS classes, allow styles to be reused anywhere.
+
+  for example
+  If a section of news is presented in a box that includes a border, background color, and other styles, a class of news might seem appropriate at the time.
+
+  However, what if you want to use the same style for a section of events. The class of news doesn’t fit in this case. Instead, a class of feat-box would make more sense and may be widely used across the entire website.
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+#CSS_BEST 1.3 - Outro to CSS best practices
+Well that's it for now, Just like our HTML best practices, Make sure these CSS best practices visible when you're coding, at least until you get very comfortable following the best practices.

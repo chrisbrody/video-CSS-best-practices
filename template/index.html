@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- character set -->
+    <meta charset="utf-8">
+    <!-- title -->
+    <title></title>
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body style="padding-top:150px;">
+
+  <!--
+      1) Organize Code with Comments
+  -->
+<!-- <pre class="prettyprints">
+<span class="com">/*bad code*/</span>
+<span class="pln">1</span>  <span class="tag">header</span> <span class="pln">{ ... }</span>
+<span class="pln">2</span>  <span class="tag">article</span> <span class="pln">{ ... }</span>
+<span class="pln">3</span>  <span class="atn">.btn</span> <span class="pln">{ ... }</span></pre> -->
+
+<!-- <pre class="prettyprints">
+<span class="com">/*good code*/</span>
+<span class="pln">1</span> <span class="com">/* Primary header */</span>
+<span class="pln">2</span> <span class="tag">header</span> <span class="pln">{ ... }</span>
+<span class="pln">3</span> <span class="com">/* Featured article */</span>
+<span class="pln">4</span> <span class="tag">article</span> <span class="pln">{ ... }</span>
+<span class="pln">5</span> <span class="com">/* Buttons */</span>
+<span class="pln">6</span> <span class="atn">.btn</span> <span class="pln">{ ... }</span></pre>
+  /* Primary header */
+  header { ... }
+
+  /* Featured article */
+  article { ... }
+
+  /* Buttons */
+  .btn { ... } -->
+  <!--
+    / 1) Organize Code with Comments
+  -->
+
+
+
+
+
+  <!--
+      2) Write CSS Using Multiple Lines & Spaces
+  -->
+
+  <!-- <pre class="prettyprints">
+<span class="com">/*bad code*/</span>
+<span class="pln">1</span> <span class="tag">a</span><span class="pln">,</span><span class="atn"> .btn</span> <span class="pln">{</span> <span class="pln">background:</span> <span class="atn">#</span><span class="pro">aaa</span><span class="pln">; color:</span> <span class="atn">#</span><span class="pro">f60</span><span class="pln">; font-size:</span><span class="atn"> 18px<span class="pln">; padding:</span> <span class="atn">6px</span><span class="pln">; }</span></span></pre> -->
+
+  <!-- <pre class="prettyprints">
+<span class="com">/*good code*/</span>
+<span class="pln">1</span> <span class="tag">a</span><span class="pln">,</span>
+<span class="pln">2</span> <span class="atn">.btn</span> <span class="pln">{</span>
+<span class="pln">3</span>    <span class="pln">background:</span> <span class="atn">#</span><span class="pro">aaa</span><span class="pln">;</span>
+<span class="pln">4</span>    <span class="pln">color:</span> <span class="atn">#</span><span class="pro">f60</span><span class="pln">;</span>
+<span class="pln">5</span>    <span class="pln">font-size:</span><span class="atn"> 18px<span class="pln">;
+<span class="pln">6</span>    <span class="pln">padding:</span> <span class="atn">6px</span><span class="pln">;</span>
+<span class="pln">7</span> <span class="pln">}</span></pre> -->
+  <!-- bad
+  a,.btn{background:#aaa;color:#f60;font-size:18px;padding:6px;}
+
+  good
+  a,
+  .btn {
+    background: #aaa;
+    color: #f60;
+    font-size: 18px;
+    padding: 6px;
+  } -->
+  <!--
+    / 2) Write CSS Using Multiple Lines & Spaces
+  -->
+
+
+
+
+
+  <!--
+      3) Use Proper Class Names
+  -->
+  <!-- <pre class="prettyprints">
+<span class="com">/*bad code*/</span>
+<span class="pln">1</span> <span class="atn">.Red_Box</span><span class="pln"> { ... }</span></pre>
+
+<pre class="prettyprints">
+<span class="com">/*good code*/</span>
+<span class="pln">1</span> <span class="atn">.alert-message</span><span class="pln"> { ... }</span></pre> -->
+    <!-- bad
+    .Red_Box { ... }
+
+    good
+    .alert-message { ... } -->
+  <!--
+    / 3) Use Proper Class Names
+  -->
+
+
+
+
+
+  <!--
+      4) Build Proficient Selectors
+  -->
+  <pre class="prettyprints">
+<span class="com">/*bad code*/</span>
+<span class="pln">1</span> <span class="pro">#aside #featured</span> <span class="tag">ul<span class="atn">.news</span> li a</span><span class="pln"> { ... }</span>
+<span class="pln">2</span> <span class="pro">#aside #featured</span> <span class="tag">ul<span class="atn">.news</span> li a em</span><span class="atn">.special</span><span class="pln"> { ... }</pre>
+
+  <pre class="prettyprints">
+<span class="com">/*good code*/</span>
+<span class="pln">1</span> <span class="atn">.news</span> <span class="tag">a</span><span class="pln"> { ... }</span>
+<span class="pln">2</span> <span class="atn">.news .special</span><span class="pln"> { ... }</span></pre>
+    <!-- bad
+    #aside #featured ul.news li a { ... }
+    #aside #featured ul.news li a em.special { ... }
+
+    good
+    .news a { ... }
+    .news .special { ... } -->
+  <!--
+    / 4) Build Proficient Selectors
+  -->
+
+
+
+
+
+
+  <!--
+      5) Use Specific Classes When Necessary
+  -->
+  <!-- <pre class="prettyprints">
+<span class="com">/*bad code*/</span>
+<span class="pln">1</span> <span class="tag">section aside h1 em</span><span class="pln"> { ... }</span></pre>
+
+<pre class="prettyprints">
+<span class="com">/*good code*/</span>
+<span class="pln">1</span> <span class="atn">.text-offset</span><span class="pln"> { ... }</span></pre> -->
+  <!-- bad
+  section aside h1 em { ... }
+
+  good
+  .text-offset { ... } -->
+  <!--
+    / 5) Use Specific Classes When Necessary
+  -->
+
+
+
+
+
+
+  <!--
+      6) Use Shorthand Properties & Values
+  -->
+  <!-- <pre class="prettyprints">
+<span class="com">/*bad code*/</span>
+<span class="pln">1</span> <span class="tag">img</span> <span class="pln">{</span>
+<span class="pln">2</span>    <span class="pln">margin-top: <span class="atn">5px</span>;</span>
+<span class="pln">3</span>    <span class="pln">margin-right: <span class="atn">10px</span>;</span>
+<span class="pln">4</span>    <span class="pln">margin-bottom: <span class="atn">5px</span>;</span>
+<span class="pln">5</span>    <span class="pln">margin-left: <span class="atn">10px</span>;</span>
+<span class="pln">6</span> <span class="pln">}</span>
+<span class="pln">7</span> <span class="tag">button</span> <span class="pln">{</span>
+<span class="pln">8</span>    <span class="pln">padding: <span class="atn">0 0 0 20px</span>;</span>
+<span class="pln">9</span> <span class="pln">}</span></pre>
+
+<pre class="prettyprints">
+<span class="com">/*good code*/</span>
+<span class="pln">1</span> <span class="tag">img</span> <span class="pln">{</span>
+<span class="pln">2</span>    <span class="pln">margin: <span class="atn">5px 10px</span>;</span>
+<span class="pln">3</span> <span class="pln">}</span>
+<span class="pln">4</span> <span class="tag">button</span> <span class="pln">{</span>
+<span class="pln">5</span>    <span class="pln">padding-left: <span class="atn">20px</span>;</span>
+<span class="pln">6</span> <span class="pln">}</span></pre> -->
+  <!-- bad
+  img {
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+  }
+  button {
+    padding: 0 0 0 20px;
+  }
+
+  good
+  img {
+    margin: 5px 10px;
+  }
+  button {
+    padding-left: 20px;
+  } -->
+  <!--
+    / 6) Use Shorthand Properties & Values
+  -->
+
+
+
+
+
+  <!--
+      7) Use Shorthand Hexadecimal Color Values
+  -->
+  <!-- <pre class="prettyprints">
+<span class="com">/*bad code*/</span>
+<span class="pln">1</span> <span class="atn">.module</span> <span class="pln">{</span>
+<span class="pln">2</span>    <span class="pln">background: <span class="pro"><span class="atn">#</span>DDDDDD</span>;</span>
+<span class="pln">3</span>    <span class="pln">color: <span class="pro"><span class="atn">#</span>FF6600</span>;</span>
+<span class="pln">4</span> <span class="pln">}</span></pre>
+
+<pre class="prettyprints">
+<span class="com">/*good code*/</span>
+<span class="pln">1</span> <span class="atn">.module</span> <span class="pln">{</span>
+<span class="pln">2</span>    <span class="pln">background: <span class="pro"><span class="atn">#</span>ddd</span>;</span>
+<span class="pln">3</span>    <span class="pln">color: <span class="pro"><span class="atn">#</span>f60</span>;</span>
+<span class="pln">4</span> <span class="pln">}</span></pre> -->
+  <!-- bad
+  .module {
+    background: #DDDDDD;
+    color: #FF6600;
+  }
+
+  good
+  .module {
+    background: #DDD;
+    color: #F60;
+  } -->
+  <!--
+    / 7) Use Shorthand Hexadecimal Color Values
+  -->
+
+
+
+
+
+  <!--
+      8) Drop Units from Zero Values
+  -->
+  <!-- <pre class="prettyprints">
+<span class="com">/*bad code*/</span>
+<span class="pln">1</span> <span class="tag">div</span> <span class="pln">{</span>
+<span class="pln">2</span>    <span class="pln">margin: <span class="atn">20px 0px</span>;</span>
+<span class="pln">3</span>    <span class="pln">letter-spacing: <span class="atn">0%</span>;</span>
+<span class="pln">4</span>    <span class="pln">padding: <span class="atn">0px 5px</span>;</span>
+<span class="pln">5</span> <span class="pln">}</span></pre>
+
+<pre class="prettyprints">
+<span class="com">/*good code*/</span>
+<span class="pln">1</span> <span class="tag">div</span> <span class="pln">{</span>
+<span class="pln">2</span>    <span class="pln">margin: <span class="atn">20px 0</span>;</span>
+<span class="pln">3</span>    <span class="pln">letter-spacing: <span class="atn">0</span>;</span>
+<span class="pln">4</span>    <span class="pln">padding: <span class="atn">0 5px</span>;</span>
+<span class="pln">5</span> <span class="pln">}</span></pre> -->
+  <!-- bad
+  div {
+    margin: 20px 0px;
+    letter-spacing: 0%;
+    padding: 0px 5px;
+  }
+
+  good
+  div {
+    margin: 20px 0;
+    letter-spacing: 0;
+    padding: 0 5px;
+  } -->
+  <!--
+    / 8) Drop Units from Zero Values
+  -->
+
+
+
+
+  <!--
+      9) Drop Units from Zero Values
+  -->
+  <!-- <pre class="prettyprints">
+<span class="com">/*bad code*/</span>
+<span class="pln">1</span> <span class="atn">.news</span> <span class="pln">{</span>
+<span class="pln">2</span>    <span class="pln">background: <span class="atn">#</span><span class="pro">eee</span>;</span>
+<span class="pln">3</span>    <span class="pln">border: <span class="atn">1px</span> <span class="pln">solid</span> <span class="atn">#</span><span class="pro">ccc</span>;</span>
+<span class="pln">4</span>    <span class="pln">border-radius: <span class="atn">6px</span>;</span>
+<span class="pln">5</span> <span class="pln">}</span>
+<span class="pln">6</span> <span class="atn">.event</span> <span class="pln">{</span>
+<span class="pln">7</span>    <span class="pln">background: <span class="atn">#</span><span class="pro">eee</span>;</span>
+<span class="pln">8</span>    <span class="pln">border: <span class="atn">1px</span> <span class="pln">solid</span> <span class="atn">#</span><span class="pro">ccc</span>;</span>
+<span class="pln">9</span>    <span class="pln">border-radius: <span class="atn">6px</span>;</span>
+<span class="pln">10</span> <span class="pln">}</span></pre>
+
+<pre class="prettyprints">
+<span class="com">/*good code*/</span>
+<span class="pln">1</span> <span class="atn">.feat-box</span> <span class="pln">{</span>
+<span class="pln">2</span>    <span class="pln">background: <span class="atn">#</span><span class="pro">eee</span>;</span>
+<span class="pln">3</span>    <span class="pln">border: <span class="atn">1px</span> <span class="pln">solid</span> <span class="atn">#</span><span class="pro">ccc</span>;</span>
+<span class="pln">4</span>    <span class="pln">border-radius: <span class="atn">6px</span>;</span>
+<span class="pln">5</span> <span class="pln">}</span></pre> -->
+  <!-- bad
+  .news {
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  .events {
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  good
+  .feat-box {
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  } -->
+  <!--
+    / 9) Drop Units from Zero Values
+  -->
+
+  <script src="js/prettyprint.js"></script>
+  </body>
+</html>
